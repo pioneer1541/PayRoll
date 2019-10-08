@@ -18,10 +18,6 @@ namespace Payroll
             {
                 Rate.Add(index, rate);
             }
-            else
-            {
-                ChangeRateToDictionary(index, rate);
-            }
         }
 
         public void ChangeRateToDictionary(string index, string rate)

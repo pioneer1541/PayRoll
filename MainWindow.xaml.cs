@@ -315,10 +315,7 @@ namespace Payroll
                 {
                     string x = ReadFile.ReadLine();
                     string index = Rate_Data.getIndexFromString(x);
-                    if (!Rate_Data.CheckID(index))
-                    {
-                        Rate_Data.AddRateToDictionary(index, Rate_Data.GetRateFromString(index, x));
-                    }
+                    Rate_Data.AddRateToDictionary(index, Rate_Data.GetRateFromString(index, x));
                 }
                 ReadFile.Close();
             }
@@ -395,7 +392,6 @@ namespace Payroll
         private string[] SearchforTaxRate(string tax_code)
         //This method will return an specific Array base on different level.
         //It includes Rate and Deduction of this level Tax Code.
-        //method 6 and metod 7 have been done in this method.
         {
             try
             {
@@ -412,7 +408,6 @@ namespace Payroll
                 }
                 ReadFile.Close();
                 return RateTable[tax_code];
-                //there are Mehtod 6 and Method 7,they will return an array that include tax_deduction and tax_rate.
             }
 
             catch (Exception e)

@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\pione\Source\Repos\PayRoll\Payroll\obj\Debug\
+C:\Users\pione\Source\Repos\PayRoll\Payroll\obj\Release\
 Payroll
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\pione\Source\Repos\PayRoll\Payroll\App.xaml
 11151548125
 
